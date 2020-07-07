@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google</title>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+      }
+      .search-area {
+        width: 600px;
+        margin: 150px auto;
+      }
+      img {
+        display: block;
+        width: 250px;
+        margin: 0 auto 25px;
+      }
+      input {
+        display: block;
+        margin: auto;
+        height: 40px;
+        width: 550px;
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 25px;
+      }
+      input:hover {
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+      }
+      .buttons-wrapper {
+        width: 278px;
+        margin: 30px auto 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .button {
+        background-color: #F2F2F2;
+        color: #5F6368;
+        border: 1px solid #F2F2F2;
+        border-radius: 4px;
+      }
+      .button:hover {
+        color: #000000;
+        box-shadow: 0 0.5px rgb(220, 220, 220);
+        border-color: rgb(190, 190, 190);
+      }
+      .button1 {
+        width: 125px;
+        padding: 9px 17px;
+      }
+      .button2 {
+        width: 140px;
+        padding: 9px 17px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+      }
+      .left-navbar {
+        position: relative;
+        right: 40px;
+        display: flex;
+        width: 125px;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .right-navbar {
+        display: flex;
+        width: 225px;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .grid-link {
+        display: grid;
+        width: 16px;
+        grid-template-columns: 4px 4px 4px;
+        grid-template-rows: 4px 4px 4px;
+        column-gap: 2px;
+        row-gap: 2px;
+      }
+      .grid-box {
+        background-color: dimgrey;
+      }
+      .nav-profile {
+        position: relative;
+        background-color: hsl(260, 60%, 58%);
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+      .first-initial {
+        position: absolute;
+        top: 7px;
+        left: 11.5px;
+        font-size: 18px;
+        font-family: sans-serif;
+        color: white;
+      }
+      .footer {
+        display: block;
+        height: 43px;
+        width: 100%;
+        position: fixed;
+        bottom: -20px;
+        left: -20px;
+        font-size: 14px;
+        background-color: rgb(242, 242, 242);
+        border: 1px solid #DFDFDF;
+      }
+      .left-footer {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        margin-top: -12px;
+        width: 360px;
+        justify-content: space-evenly;
+      }
+      .right-footer {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 22px;
+        margin-top: -12px;
+        width: 250px;
+        justify-content: space-evenly;
+      }
+      .top-link {
+        color: #000000;
+        opacity: 0.75;
+      }
+      .bottom-link {
+        color: #5F6368;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="navbar">
+        <div class="left-navbar">
+          <li><a class="top-link" href="#">About</a></li>
+          <li><a class="top-link" href="#">Store</a></li>
+        </div>
+        <div class="right-navbar">
+          <li><a class="top-link" href="#">Gmail</a></li>
+          <li><a class="top-link" href="#">Images</a></li>
+          <li>
+            <a href="#">
+              <div class="grid-link">
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="nav-profile">
+                <div class="first-initial">D</div>
+              </div>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </header>
+    <div class="search-area">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="the google logo">
+      <input type="text">
+      <div class="buttons-wrapper">
+        <button class="button button1" type="button">Google Search</button>
+        <button class="button button2" type="button">I'm Feeling Lucky</button>
+      </div>
+    </div>
+    <footer>
+      <ul class="footer">
+        <div class="left-footer">
+          <li><a class="bottom-link" href="#">Advertising</a></li>
+          <li><a class="bottom-link" href="#">Business</a></li>
+          <li><a class="bottom-link" href="#">How Search works</a></li>
+        </div>
+        <div class="right-footer">
+          <li><a class="bottom-link" href="#">Privacy</a></li>
+          <li><a class="bottom-link" href="#">Terms</a></li>
+          <li><a class="bottom-link" href="#">Settings</a></li>
+        </div>
+      </ul>
+    </footer>
+  </body>
+</html>
